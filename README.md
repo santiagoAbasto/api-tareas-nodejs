@@ -56,10 +56,24 @@ git clone https://github.com/santiagoAbasto/api-tareas-nodejs.git
 cd task-api
 ```
 
-2. Instala las dependencias:
+---
+
+## Dependencias utilizadas
+
+A continuación, las librerías clave utilizadas en el proyecto:
+
+- **express** – Framework para construir la API REST.
+- **cors** – Middleware para permitir solicitudes entre dominios.
+- **sqlite3** – Base de datos embebida para persistencia de tareas.
+- **socket.io** – WebSockets para emisión de eventos en tiempo real.
+- **nodemon** – Herramienta de desarrollo para recarga automática.
+- **path** – Módulo nativo de Node.js para trabajar con rutas de archivos.
+
+Se Instalara automáticamente con:
 
 ```bash
 npm install
+
 ```
 
 3. Inicia el servidor en desarrollo:
