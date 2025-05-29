@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Socket.IO - Tareas en Tiempo Real</title>
+</head>
+<body>
+  <h1>📋 Lista de tareas (eventos en vivo)</h1>
+  <ul id="log"></ul>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script>
+    const socket = io('http://localhost:3000');
+    const log = document.getElementById('log');
+
+    const agregarLog = (mensaje) => {
+      const li = document.createElement('li');
+      li.textContent = mensaje;
+      log.prepend(li);
+    };
+
+    socket.on('connect', () => {
+      agregarLog('🟢 Conectado al servidor WebSocket');
+    });
+
+    socket.on('newTask', (task) => {
+      agregarLog(`➕ Nueva tarea: "${task.titulo}" (${task.status})`);
+    });
+
+    socket.on('taskUpdated', ({ id, status }) => {
+      agregarLog(`✅ Tarea #${id} actualizada a "${status}"`);
+    });
+
+    socket.on('taskDeleted', ({ id }) => {
+      agregarLog(`🗑️ Tarea #${id} eliminada`);
+    });
+
+    socket.on('disconnect', () => {
+      agregarLog('🔴 Desconectado del servidor');
+    });
+  </script>
+</body>
+</html>
