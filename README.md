@@ -196,6 +196,7 @@ Este cliente muestra:
 Si deseas verificar los eventos WebSocket sin `index.html`, puedes usar `wscat`:
 
 ```bash
+npm install -g wscat
 npx wscat -c ws://localhost:3000
 ```
 
