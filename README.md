@@ -1,10 +1,10 @@
-# 📋 API de Gestión de Tareas (Node.js + Express + SQLite + Socket.IO)
+# API de Gestión de Tareas (Node.js + Express + SQLite + Socket.IO)
 
 Este proyecto es una API RESTful desarrollada con **Node.js**, **Express**, **SQLite** y **Socket.IO**, que permite gestionar tareas en tiempo real. Cumple con los requisitos técnicos de la prueba: creación, listado, actualización, eliminación y emisión de eventos por WebSocket.
 
 ---
 
-## ✅ Funcionalidades implementadas
+## Funcionalidades implementadas
 
 - Crear tareas (POST `/tasks`)
 - Obtener todas las tareas (GET `/tasks`)
@@ -15,7 +15,7 @@ Este proyecto es una API RESTful desarrollada con **Node.js**, **Express**, **SQ
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Node.js
 - Express
@@ -26,7 +26,7 @@ Este proyecto es una API RESTful desarrollada con **Node.js**, **Express**, **SQ
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 task-api/
@@ -47,7 +47,7 @@ task-api/
 
 ---
 
-## 📦 Instalación del entorno
+## Instalación del entorno
 
 1. Clona el repositorio o descarga el `.zip`:
 
@@ -107,7 +107,7 @@ Eliminar una tarea por su ID.
 
 ---
 
-## 📡 Eventos WebSocket implementados
+## Eventos WebSocket implementados
 
 Los eventos se emiten automáticamente en las siguientes acciones:
 
@@ -119,7 +119,7 @@ Los eventos se emiten automáticamente en las siguientes acciones:
 
 ---
 
-## 🖥️ Cliente Web para ver eventos en vivo
+## Cliente Web para ver eventos en vivo
 
 Se incluye una interfaz mínima en `public/index.html` para ver eventos en vivo conectados por Socket.IO.
 
@@ -156,7 +156,7 @@ Este cliente muestra:
 ## 📷 Capturas de ejecución frontend Socket en vivo
 
 ### 🟢 Cliente conectado
-![Conexión WebSocket](./screenshots/EN_VIVO.PNG)
+![Conexión WebSocket](./screenshots/EN_VIVO.png)
 
 ### 🆕 Crear tarea
 ![Crear tarea](./screenshots/TASK_EN_VIVO1.png)
@@ -187,7 +187,7 @@ npx wscat -c ws://localhost:3000
 
 ---
 
-## 💬 Autor
+##  Autor
 
 Desarrollado por: **Santiago Alfredo Abasto Ortega**  
 🔧 Estudiante de Ingeniería de Sistemas - UCATEC  
